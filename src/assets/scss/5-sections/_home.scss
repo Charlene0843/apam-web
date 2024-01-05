@@ -1,0 +1,147 @@
+.home-wrapper {
+
+    background: $black;
+    height: 1000vh;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 1px;
+        height: 900px;
+        background-color: $white--one;
+        display: block;
+
+        position: absolute;
+        left: 50px;
+
+    }
+
+    &::after {
+        content: '';
+        width: 1px;
+        height: 900px;
+        background-color: $white--one;
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 50px;
+
+    }
+
+
+
+
+    nav {
+        padding: 34px 111px 26px;
+
+        border-bottom: 1px solid $white--one;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 120px;
+            height: 32px;
+            z-index: 2;
+        }
+
+        .menu {
+            display: flex;
+
+            button {
+                padding: 8px 24px;
+                margin-left: 23px;
+                border: 1px solid $white;
+                border-radius: 20px;
+                color: $white;
+                font-size: 17px;
+                font-weight: 300;
+                letter-spacing: 3.4px;
+            }
+        }
+
+    }
+
+    .banner {
+        // outline: 1px solid tomato;
+
+        position: relative;
+        padding-top: 310px;
+        overflow: hidden;
+
+        .banner-logo {
+            position: relative;
+            font-family: sans-serif;
+            text-transform: uppercase; 
+            font-size: 2em;
+            letter-spacing: 4px;
+            overflow: hidden; 
+            background: linear-gradient(90deg, #000, #fff, #000);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: flash-light 8s linear infinite;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+
+        }
+        svg{
+            fill: transparent;
+            // color: rgba($color: $black, $alpha: 0.4);
+            // fill: rgba($color: , $alpha: 0);
+            // background: linear-gradient(90deg, $black, #fff, $black);
+            background-repeat: no-repeat;
+            background-size: 80%;
+
+            animation: flash-light 8s linear infinite;
+        }
+
+        @keyframes flash-light {
+            0% {
+                background-position: -500%;
+            }
+
+            100% {
+                background-position: 500%;
+            }
+
+        }
+
+
+    }
+
+    .dec-green {
+        position: absolute;
+        top: -200px;
+        left: -300px;
+        z-index: 1;
+
+        // animation: rotate 8s infinite linear;
+    }
+
+    .dec-orange {
+        position: absolute;
+        top: 580px;
+        right: -90px;
+        z-index: 1;
+
+        // animation: rotate 8s infinite linear;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateZ(0deg);
+            transform-origin: 1000px 1000px;
+        }
+
+        100% {
+            transform: rotateZ(360deg);
+            transform-origin: 1000px 1000px;
+
+        }
+
+    }
+}

@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 .home-wrapper {
 
     background: $black;
-    height: 1000vh;
+    
+    width: 100vw;
+    outline: 1px solid tomato;
     position: relative;
+
+    font-family: 'Noto Sans TC', sans-serif;
+
 
     &::before {
         content: '';
@@ -50,7 +55,7 @@
         left: -300px;
         z-index: 0;
 
-        animation: rotate 8s infinite linear;
+        // animation: rotate 8s infinite linear; 
     }
 
     .dec-orange {
@@ -59,7 +64,7 @@
         right: -90px;
         z-index: 0;
 
-        animation: rotate 8s infinite linear;
+        // animation: rotate 8s infinite linear;
     }
 
     @keyframes rotate {
@@ -74,6 +79,25 @@
 
         }
 
+    }
+
+    .more {
+        font-family: 'Bebas Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        color: $white;
+
+        span {
+            font-size: 36px;
+            letter-spacing: 3.6px;
+            margin-right: 14px;
+        }
+
+        &:hover {
+            color: $orange;
+        }
     }
 
 
@@ -104,6 +128,12 @@
                 font-size: 17px;
                 font-weight: 300;
                 letter-spacing: 3.4px;
+
+                &:hover {
+                    background-color: $orange;
+                    border: 1px solid $orange;
+
+                }
             }
         }
 
@@ -139,6 +169,7 @@
         }
 
         svg {
+            width: 70%;
             // fill: transparent;
             // color: rgba($color: $black, $alpha: 0.4);
             color: $white;
@@ -180,11 +211,11 @@
             font-size: 32px;
 
             /* 	width: 8.25em; */
-            width: 360px;
+            width: 350px;
             white-space: nowrap;
             overflow: hidden;
             border-right: .05em solid;
-            animation: typing 4s steps(11)infinite,
+            animation: typing 8s steps(14)infinite,
                 caret 1s steps(1) infinite;
         }
 
@@ -233,7 +264,16 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            color: $white;
+
+            svg {
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
         }
+
     }
 
 
@@ -249,7 +289,8 @@
         z-index: 1;
 
         .rev-x-logo {
-            width: 800px;
+            width: 60%;
+            max-width: 500px;
             margin-top: 200px;
         }
 
@@ -274,25 +315,30 @@
             justify-content: center;
             align-items: center;
             margin-top: 100px;
+            color: $white;
 
             span {
-                color: $white;
                 font-size: 36px;
                 letter-spacing: 3.6px;
                 margin-right: 14px;
+            }
 
+            &:hover {
+                color: $orange;
             }
         }
 
         .phone1 {
-            width: 405px;
+            width: 20%;
+            max-width: 405px;
             position: absolute;
             top: 0;
             right: 5%;
         }
 
         .phone2 {
-            width: 415px;
+            width: 25%;
+            max-width: 415px;
             position: absolute;
             bottom: 0;
             left: 10%;
@@ -303,7 +349,10 @@
     }
 
 
+    // 跑馬燈
     .what-we-do {
+        height: 100vh;
+
         .marquee-container {
             margin-top: 100px;
             width: 100%;
@@ -315,6 +364,7 @@
                 display: flex;
                 white-space: nowrap;
                 animation: marquee 10s linear infinite;
+                // transform: translateX(-1600px);
 
                 svg {
                     margin-right: 100px;
@@ -327,13 +377,327 @@
                 }
 
                 100% {
-                    transform: translateX(-100%);
+                    transform: translateX(-1672px);
                 }
             }
         }
 
+        .main {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+
+            .service {
+                border-radius: 30px;
+
+                background-position: center;
+                background-size: cover;
+
+                position: absolute;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+
+                color: $white;
+                font-size: 26px;
+                font-weight: 700;
+                letter-spacing: 5.2px;
+
+                .text-wrapper {
+                    background: linear-gradient(180deg, rgba(2, 33, 36, 0.00) 0%, #021B24 50%);
+
+                    padding: 20px;
+                    width: 100%;
+                    height: 100px;
+                    border-radius: 30px;
+                    text-align: left;
+                    line-height: 2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    span {
+
+                        display: none;
+                        color: rgba(255, 255, 255, 0.60);
+
+                        font-size: 20px;
+                        font-weight: 300;
+                        letter-spacing: 4px;
+                    }
+
+                    .line {
+                        opacity: 0;
+                        width: 0px;
+                        border: 1px solid $white;
+                        position: absolute;
+                        bottom: 30px;
+
+                    }
+
+                }
+
+
+                &:hover {
+                    .text-wrapper {
+                        transition: 500ms linear;
+                        height: 80%;
+                        opacity: 0.8;
+                        justify-content: center;
+                        align-items: center;
+
+                        position: relative;
+
+                        span {
+                            display: block;
+                        }
+
+                        .line {
+                            opacity: 1;
+                            transition: 500ms linear;
+                            width: 100px;
+                            border: 1px solid $white;
+                            position: absolute;
+                            bottom: 30px;
+
+                        }
+                    }
+                }
+
+            }
+
+            .web3 {
+                width: 30%;
+                height: 60vh;
+
+                top: -100px;
+                left: 15%;
+            }
+
+            .CRM-member {
+                width: 25%;
+                height: 30vh;
+
+                top: -50px;
+                right: 25%;
+            }
+
+            .ticket {
+                width: 25%;
+                height: 30vh;
+
+                top: 30vh;
+                right: 23%;
+            }
+        }
     }
 
+    .why-us {
+
+        display: flex;
+        flex-direction: column;
 
 
+
+
+        .wrapper {
+            background-image: url(../../../../public/img/background/gradient-1.png);
+            background-size: cover;
+            width: 90%;
+
+            align-self: flex-end;
+            position: relative;
+
+
+            display: flex;
+            justify-content: center;
+            padding: 130px 0px;
+
+            .title {
+                position: absolute;
+                top: -90px;
+                left: -120px;
+
+                color: $blue--one;
+                opacity: 0.2;
+
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 168px;
+                text-align: left;
+                letter-spacing: 16.8px;
+            }
+
+            ul {
+
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 70px;
+
+                    img {
+                        width: 200px;
+                    }
+
+                    .main {
+                        margin-left: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        color: $white;
+
+                        h4 {
+                            font-size: 28px;
+                            font-weight: 500;
+                        }
+
+                        p {
+                            margin-top: 11px;
+                            font-size: 17px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .news {
+        padding: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        ul {
+            color: $white--one;
+
+            li {
+                border-bottom: 1px solid #888;
+                display: flex;
+                align-items: center;
+                padding: 25px 13px;
+
+                .title {
+                    border: 1px solid $white--one ;
+                    padding: 8px 24px;
+
+                }
+
+                span {
+                    margin-right: 30px;
+                }
+
+                p {
+                    margin-right: 30px;
+                    letter-spacing: 3.4px;
+                }
+
+                .arrow {
+                    width: 100px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    div {
+                        width: 100px;
+                        border-top: 1px solid $white--one ;
+                    }
+
+                    &::after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        border: solid $white--one;
+                        border-width: 1px 1px 0 0;
+                        transform: translate(-90%, -50%) rotate(45deg);
+
+                    }
+                }
+
+                &:hover {
+                    color: $blue;
+                    transition: 500ms linear;
+
+                    .title {
+                        transition: 500ms linear;
+                        background-color: $blue;
+                        color: $black;
+                        border: 1px solid $blue ;
+
+                    }
+
+                    .arrow {
+                        div {
+                            width: 25px;
+                            transition: 500ms linear;
+                            border-top: 1px solid $white--one ;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .news-decoration {
+            position: absolute;
+            top: 200px;
+            right: 100px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 168px;
+            letter-spacing: 16.8px;
+
+            color: transparent;
+            -webkit-text-stroke: 1px $blue--one;
+            text-stroke: 1px $blue--one;
+            opacity: 0.4;
+
+
+            transform: rotate(90deg);
+        }
+    }
+
+    .lets-talk {
+        height: 70vh;
+        background-image: url(../../../../public/img/background/gradient-2.jpeg);
+        background-size: cover;
+
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: 'Noto Sans TC', sans-serif;
+            color: $white;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2.8px;
+            margin-bottom: 8px;
+        }
+        .vertical-line {
+            height: 144px;
+            border: 1px solid $white;
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+        .background-decoration {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 168px;
+            text-align: left;
+            letter-spacing: 16.8px;
+
+            color: rgba(160, 245, 238, 0.40);
+            opacity: 0.2;
+        }
+    }
 }

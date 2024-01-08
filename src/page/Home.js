@@ -2,8 +2,48 @@ import React from "react";
 
 import { ReactSVG } from "react-svg";
 
+import Footer from "../components/Footer/Footer";
+
 
 const Home = () => {
+
+    const whyUs = [
+        {
+            eng: 'client-oriented',
+            img: '/img/why-us/client-oriented.png',
+            title: '客戶導向',
+            content: '我們的團隊始終將客戶需求放在首位，從而確保我們的解決方案能夠完全滿足客戶的期望和要求。'
+        }, {
+            eng: 'focus-value',
+            img: '/img/why-us/focus-value.png',
+            title: '專注於價值',
+            content: '我們注重創造價值，通過 新型技術提供更多的商業價值和機會。'
+        }, {
+            eng: 'communication',
+            img: '/img/why-us/communication.png',
+            title: '​溝通協作',
+            content: '我們注重與客戶的溝通和協作，能夠快速反應客戶的需求並提供專業的技術建議。'
+        }
+    ]
+    const news = [
+        {
+            date: '2023.12.05',
+            content: '想過一整起來是打看到，有特別，的事請假看起的的生治正確。'
+        },
+        {
+            date: '2023.12.05',
+            content: '想過一整起來是打看到，有特別，的事請假看起的的生治正確。'
+        },
+        {
+            date: '2023.12.05',
+            content: '想過一整起來是打看到，有特別，的事請假看起的的生治正確。'
+        },
+        {
+            date: '2023.12.27',
+            content: '想過一整起來是打看到，有特別，的事請假看起的的生治正確。'
+        }
+    ]
+
 
     return (
         <div className="home-wrapper">
@@ -23,7 +63,7 @@ const Home = () => {
 
 
             <div className='banner'>
-                <p className="banner-typing">擁有全方位 Web 3 盡在</p>
+                <p className="banner-typing">擁有全方位W e  b   3 盡在</p>
                 <ReactSVG
                     className="banner-logo"
                     src={process.env.PUBLIC_URL + '/img/logo/apam_logo_L.svg'} />
@@ -67,17 +107,99 @@ const Home = () => {
             <div className="what-we-do">
                 <div class="marquee-container">
                     <div class="marquee-content">
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/cube.svg'} />
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/cube.svg'} />
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/cube.svg'} />
-                     </div>
+                        <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />
+                        <ReactSVG src={process.env.PUBLIC_URL + '/img/cube.svg'} />
+                        <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />
+                        <ReactSVG src={process.env.PUBLIC_URL + '/img/cube.svg'} />
+                        <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />
+                        <ReactSVG src={process.env.PUBLIC_URL + '/img/cube.svg'} />
+                    </div>
+                </div>
+                <div className="main">
+                    <div className="web3 service"
+                        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/computer-1.png)` }}>
+                        <div className="text-wrapper">
+                            <p>Web 3.0 服務</p>
+                            <span>啟動Web 3 開啟數位創新</span>
+                            <div className="line"></div>
+                        </div>
+
+                    </div>
+                    <div className="CRM-member service"
+                        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/crm-member.png)` }}>
+                        <div className="text-wrapper">
+                            <p>CRM會員系統</p>
+                            <span>品牌會員計劃 輕鬆打造</span>
+                            <div className="line"></div>
+                        </div>
+                    </div>
+                    <div className="ticket service"
+                        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/computer-1.png)` }}>
+                        <div className="text-wrapper">
+                            <p>售票系統</p>
+                            <span>活動策劃輕鬆上手 完美體驗</span>
+                            <div className="line"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
+            <div className="why-us">
+                <div className="wrapper">
+                    <span className="title">WHY US?</span>
+                    <ul>
+                        {
+                            whyUs.map((item, index) => {
+                                return (
+                                    <li key={item.eng}>
+                                        <img src={process.env.PUBLIC_URL + item.img} alt={item.eng} />
+                                        <div className="main">
+                                            <h4>{item.title}</h4>
+                                            <p>{item.content}</p>
+                                        </div>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                </div>
+
+            </div>
+
+            <div className="news">
+                <ul>
+                    {news.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                <span className="title">最新公告</span>
+                                <span>{item.date}</span>
+                                <p>{item.content}</p>
+                                <div className="arrow"><div ></div></div>
+
+                            </li>
+
+                        )
+                    })}
+                    <div className="more">
+                        <span>MORE</span>
+                        <ReactSVG src={process.env.PUBLIC_URL + '/img/arrow.svg'} />
+                    </div>
+                </ul>
+                <div className="news-decoration">NEWS</div>
+            </div>
+
+            <div className="lets-talk">
+                <p>APAM</p>
+                <p>協助實現您的新藍圖</p>
+                <span className="vertical-line"></span>
+                <div className="more">
+                    <span>立即諮詢</span>
+                    <ReactSVG src={process.env.PUBLIC_URL + '/img/arrow.svg'} />
+                </div>
+                <div className="background-decoration">LET'S TALK</div>
+
+            </div>
 
 
             <p className="copyright">
@@ -85,6 +207,7 @@ const Home = () => {
                 <br />
                 A member of the APAM . APAM International Co. Ltd
             </p>
+            <Footer />
 
 
         </div>

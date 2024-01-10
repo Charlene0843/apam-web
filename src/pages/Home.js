@@ -3,6 +3,8 @@ import React from "react";
 import { ReactSVG } from "react-svg";
 
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Consultation from "../components/Consultation/Consultation";
 
 
 const Home = () => {
@@ -53,21 +55,15 @@ const Home = () => {
             <ReactSVG
                 className="dec-orange"
                 src={process.env.PUBLIC_URL + 'img/decorations/orange-1.svg'} />
-            <nav>
-                <img src={process.env.PUBLIC_URL + '/img/logo/apam_logo.png'} alt="logo" />
-                <div className="menu">
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/Burger_Mene.svg'} />
-                    <button>聯絡我們</button>
-                </div>
-            </nav>
+            <Header />
 
 
             <div className='banner'>
-                <p className="banner-typing">擁有全方位W e  b   3 盡在</p>
+                <p className="banner-typing">擁有全方位<span>Web3</span>盡在</p>
                 <ReactSVG
                     className="banner-logo"
-                    src={process.env.PUBLIC_URL + '/img/logo/apam_logo_L.svg'} />
-                <p className="banner-logo">Shining Text Animation Effects</p>
+                    src={process.env.PUBLIC_URL + '/img/logo/apam_logo_mask.svg'} />
+                {/* <p className="banner-logo">Shining Text Animation Effects</p> */}
 
                 <div className="onoff">
                     <span className="circle"></span>
@@ -189,24 +185,10 @@ const Home = () => {
                 <div className="news-decoration">NEWS</div>
             </div>
 
-            <div className="lets-talk">
-                <p>APAM</p>
-                <p>協助實現您的新藍圖</p>
-                <span className="vertical-line"></span>
-                <div className="more">
-                    <span>立即諮詢</span>
-                    <ReactSVG src={process.env.PUBLIC_URL + '/img/arrow.svg'} />
-                </div>
-                <div className="background-decoration">LET'S TALK</div>
-
-            </div>
+            <Consultation />
 
 
-            <p className="copyright">
-                Copyright © 2022 AP . APAM. All Rights Reserved.
-                <br />
-                A member of the APAM . APAM International Co. Ltd
-            </p>
+           
             <Footer />
 
 

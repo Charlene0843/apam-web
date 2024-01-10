@@ -1,5 +1,12 @@
 @import "1-base/reset";
 @import "1-base/fontStyle";
 @import "6-helpers/variables";
+@import "3-layout/header";
 @import "3-layout/footer";
+@import "4-elements/preloader";
+@import "4-elements/consultation";
+@import "4-elements/marquee";
+@import "4-elements/banner-title";
 @import "5-sections/home";
+@import "5-sections/software-development";
+@import "5-sections/introduction";

@@ -1,13 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = (() => {
+    const navigate = useNavigate();
 
     const footer = [
         {
             title: '關於艾恩',
             item: [{
                 title: '公司介紹',
-                path: '',
+                path: '/introduction',
             }, {
                 title: '核心技術',
                 path: '',
@@ -31,6 +33,7 @@ const Footer = (() => {
             ]
         }, {
             title: '軟體開發',
+            path:'/software-development',
             item: [{
                 title: '預約系統',
                 path: '',
@@ -75,6 +78,11 @@ const Footer = (() => {
     ]
     return (
         <footer>
+             <p className="copyright">
+                Copyright © 2022 AP . APAM. All Rights Reserved.
+                <br />
+                A member of the APAM . APAM International Co. Ltd
+            </p>
             <div className="wrapper">
                 <div className="contact-us">CONTACT US</div>
             <section>
@@ -93,11 +101,13 @@ const Footer = (() => {
                 {footer.map((item, index) => {
                     return (
                         <ul key={index}>
-                            <span className="title">{item.title}</span>
+                            <span className="title"
+                            onClick={()=>{navigate(item?.path)}}>{item.title}</span>
                             <hr />
                             {item.item.map((item, index) => {
                                 return (
-                                    <li key={index}>
+                                    <li key={index}
+                                    onClick={()=>{navigate(item?.path)}}>
                                         {item.title}
                                     </li>
                                 )

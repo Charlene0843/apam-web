@@ -1,0 +1,38 @@
+.banner-title {
+    padding: 0px 50px;
+    border-bottom: 1px solid $white--one;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-title {
+        position: relative;
+
+        p {
+            color: $white;
+            position: absolute;
+            bottom: 50px;
+            right: -50px;
+
+
+            font-family: 'Noto Sans TC';
+            font-size: 32px;
+            letter-spacing: 6.4px;
+        }
+    }
+
+    .stroke {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 170px;
+        letter-spacing: 17px;
+        text-transform: capitalize;
+
+        color: transparent;
+        -webkit-text-stroke: 1px $blue--one;
+        text-stroke: 1px $blue--one;
+        opacity: 0.4;
+        margin-right: 90px;
+
+    }
+}

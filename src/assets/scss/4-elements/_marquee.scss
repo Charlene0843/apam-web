@@ -1,0 +1,34 @@
+.marquee-container-text {
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+
+    .marquee-content-text {
+
+
+        display: flex;
+        white-space: nowrap;
+        animation: marquee-text 10s linear infinite;
+        // transform: translateX(-963px);
+
+        div {
+            margin-right: 100px;
+
+            color: $white;
+            opacity: 0.2;
+            font-family: 'Bebas Neue';
+            font-size: 136px;
+            letter-spacing: 13.6px;
+        }
+    }
+
+    @keyframes marquee-text {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-936px);
+        }
+    }
+}

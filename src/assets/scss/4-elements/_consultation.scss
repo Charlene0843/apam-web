@@ -1,0 +1,40 @@
+.lets-talk {
+    height: 70vh;
+    background-image: url(../../../../public/img/background/gradient-2.jpeg);
+    background-size: cover;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-family: 'Noto Sans TC', sans-serif;
+        color: $white;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        margin-bottom: 8px;
+    }
+    .vertical-line {
+        height: 144px;
+        border: 1px solid $white;
+        display: inline-block;
+        margin-top: 40px;
+    }
+
+    .background-decoration {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 168px;
+        text-align: left;
+        letter-spacing: 16.8px;
+
+        color: rgba(160, 245, 238, 0.40);
+        opacity: 0.2;
+    }
+}

@@ -36,18 +36,7 @@
 
     }
 
-    .copyright {
-        position: fixed;
-        bottom: 160px;
-        left: -150px;
-        color: $grey--one;
-        transform: rotate(-90deg);
-
-        font-size: 12px;
-        font-weight: 350;
-        letter-spacing: 1.2px;
-        line-height: 2;
-    }
+   
 
     .dec-green {
         position: fixed;
@@ -55,7 +44,7 @@
         left: -300px;
         z-index: 0;
 
-        // animation: rotate 8s infinite linear; 
+        // animation: rotate 18s infinite linear; 
     }
 
     .dec-orange {
@@ -70,12 +59,12 @@
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
-            transform-origin: 1000px 1000px;
+            transform-origin: 1500px 1500px;
         }
 
         100% {
             transform: rotateZ(360deg);
-            transform-origin: 1000px 1000px;
+            transform-origin: 1500px 1500px;
 
         }
 
@@ -101,43 +90,7 @@
     }
 
 
-    nav {
-        padding: 34px 111px 26px;
-
-        border-bottom: 1px solid $white--one;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        img {
-            width: 120px;
-            height: 32px;
-            z-index: 2;
-        }
-
-        .menu {
-            display: flex;
-
-            button {
-                padding: 8px 24px;
-                margin-left: 23px;
-                border: 1px solid $white;
-                border-radius: 20px;
-                color: $white;
-                font-size: 17px;
-                font-weight: 300;
-                letter-spacing: 3.4px;
-
-                &:hover {
-                    background-color: $orange;
-                    border: 1px solid $orange;
-
-                }
-            }
-        }
-
-    }
+    
 
     .banner {
         // outline: 1px solid tomato;
@@ -150,36 +103,36 @@
         flex-direction: column;
         align-items: center;
 
+        // .banner-logo {
+        //     position: relative;
+        //     font-family: sans-serif;
+        //     text-transform: uppercase;
+        //     font-size: 2em;
+        //     letter-spacing: 4px;
+        //     overflow: hidden;
+        //     background: linear-gradient(90deg, #000, #fff, #000);
+        //     background-repeat: no-repeat;
+        //     background-size: 80%;
+        //     animation: flash-light 8s linear infinite;
+        //     background-clip: text;
+        //     -webkit-background-clip: text;
+        //     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+
+        // }
+
         .banner-logo {
-            position: relative;
-            font-family: sans-serif;
-            text-transform: uppercase;
-            font-size: 2em;
-            letter-spacing: 4px;
-            overflow: hidden;
-            background: linear-gradient(90deg, #000, #fff, #000);
-            background-repeat: no-repeat;
-            background-size: 80%;
-            animation: flash-light 8s linear infinite;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: rgba(255, 255, 255, 0);
-
-
-        }
-
-        svg {
-            width: 70%;
+           height: 380px;
             // fill: transparent;
             // color: rgba($color: $black, $alpha: 0.4);
-            color: $white;
-            // color: transparent;
-            // fill: rgba($color: , $alpha: 0);
-            // background: linear-gradient(90deg, $black, #fff, $black);
+            // color: $white;
+            color: $black;
+            // fill: rgba($color: white, $alpha: 0);
+            background: linear-gradient(90deg, $black, #fff, $black);
             background-repeat: no-repeat;
             background-size: 80%;
 
-            // animation: flash-light 8s linear infinite;
+            animation: flash-light 10s linear infinite;
         }
 
         @keyframes flash-light {
@@ -211,12 +164,18 @@
             font-size: 32px;
 
             /* 	width: 8.25em; */
-            width: 350px;
+            width: 415px;
             white-space: nowrap;
             overflow: hidden;
             border-right: .05em solid;
-            animation: typing 8s steps(14)infinite,
+            animation: typing 6s steps(13)infinite,
                 caret 1s steps(1) infinite;
+                span{
+                    display: inline-block;
+                    width: 126px;
+                    letter-spacing: 8px;
+
+                }
         }
 
 
@@ -287,6 +246,9 @@
 
         position: relative;
         z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .rev-x-logo {
             width: 60%;
@@ -307,6 +269,7 @@
             font-weight: 300;
             letter-spacing: 3.4px;
             line-height: 2;
+            text-align: center;
         }
 
         .more {
@@ -660,44 +623,5 @@
         }
     }
 
-    .lets-talk {
-        height: 70vh;
-        background-image: url(../../../../public/img/background/gradient-2.jpeg);
-        background-size: cover;
-
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        p{
-            font-family: 'Noto Sans TC', sans-serif;
-            color: $white;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 2.8px;
-            margin-bottom: 8px;
-        }
-        .vertical-line {
-            height: 144px;
-            border: 1px solid $white;
-            display: inline-block;
-            margin-top: 40px;
-        }
-
-        .background-decoration {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 168px;
-            text-align: left;
-            letter-spacing: 16.8px;
-
-            color: rgba(160, 245, 238, 0.40);
-            opacity: 0.2;
-        }
-    }
+ 
 }

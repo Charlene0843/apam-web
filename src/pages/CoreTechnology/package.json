@@ -1,0 +1,5 @@
+{
+  "name": "coretechnology",
+  "private": true,
+  "main": "./CoreTechnology.js"
+}

@@ -22,7 +22,7 @@ const Header = () => {
                     path: '/introduction',
                 }, {
                     title: '核心技術',
-                    path: '',
+                    path: '/core-technology',
                 }, {
                     title: '開發流程',
                     path: '',

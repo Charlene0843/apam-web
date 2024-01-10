@@ -1,0 +1,184 @@
+.core-technology {
+    .banner {
+        h3 {
+            color: $white;
+            font-family: 'Noto Sans TC';
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 8.4px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: $white--one;
+            font-family: 'Noto Sans TC';
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 4.8px;
+        }
+
+        .line {
+            width: 1px;
+            height: 74px;
+            border-left: 1px solid $white--one ;
+            transform: rotate(15deg);
+            margin: 30px;
+        }
+
+        p {
+            color: $white--one;
+            font-family: 'Noto Sans TC';
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 30px;
+            /* 176.471% */
+            letter-spacing: 3.4px;
+        }
+
+        .cube {
+            margin-top: 180px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .tool-area {
+        background-image: url(../../../../public/img/background/gradient-4.png);
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                width: 40%;
+                color: $white--one;
+                font-family: 'Noto Sans TC';
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 39px;
+                /* 162.5% */
+                letter-spacing: 4.8px;
+            }
+
+            // 裝飾
+            .left-dec {
+                position: relative;
+                padding: 3px;
+                // outline: 1px solid red;
+
+                .infinity {
+                    position: absolute;
+                    top: -92px;
+                    left: -222px;
+
+                }
+
+                .pyramid {
+                    position: absolute;
+                    top: -184px;
+                    left: -123px;
+
+
+                }
+
+                .hexagon {
+                    position: absolute;
+                    top: -9px;
+                    left: -117px;
+                }
+            }
+
+            .right-dec {
+                // outline: 1px solid blue;
+                padding: 3px;
+                position: relative;
+
+                .beta-sheet {
+                    position: absolute;
+                    top: -175px;
+                    right: -119px;
+                }
+
+                .cube {
+                    position: absolute;
+                    top: -97px;
+                    right: -287px;
+                }
+
+                .wave {
+                    position: absolute;
+                    top: -31px;
+                    right: -142px;
+                }
+            }
+
+
+
+        }
+
+
+
+    }
+
+    .enviroment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px;
+
+        div {
+            display: flex;
+            justify-content: space-around;
+
+            width: 80%;
+            gap: 30px;
+            margin-top: 15px;
+            margin-bottom: 60px;
+
+            .web {
+                padding: 74px;
+
+                border-radius: 30px;
+                background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.02) 100%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+
+
+                p {
+                    width: 100%;
+                    color: $white--one;
+                    font-family: 'Noto Sans TC';
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    /* 176.471% */
+                    letter-spacing: 3.4px;
+                    span{
+                        color: $orange;
+                    }
+                }
+            }
+
+            .large {
+                width: 100%;
+                p{
+                    width: 50%;
+                }
+            }
+        }
+
+
+    }
+}

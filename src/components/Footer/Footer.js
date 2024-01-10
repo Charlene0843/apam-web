@@ -12,7 +12,7 @@ const Footer = (() => {
                 path: '/introduction',
             }, {
                 title: '核心技術',
-                path: '',
+                path: '/core-technology',
             }
             ]
         }, {

@@ -13,6 +13,9 @@ const Footer = (() => {
             }, {
                 title: '核心技術',
                 path: '/core-technology',
+            },{
+                title: '開發流程',
+                path: '/process',
             }
             ]
         }, {

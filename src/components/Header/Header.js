@@ -25,7 +25,7 @@ const Header = () => {
                     path: '/core-technology',
                 }, {
                     title: '開發流程',
-                    path: '',
+                    path: '/process',
                 }
                 ]
             }, {

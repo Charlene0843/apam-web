@@ -1,0 +1,5 @@
+{
+  "name": "process",
+  "private": true,
+  "main": "./Process.js"
+}

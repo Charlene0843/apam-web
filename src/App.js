@@ -12,6 +12,7 @@ import Home from "./pages/Home"
 const SoftwareDevelop = lazy(() => import("./pages/SoftwareDevelop"));
 const Introduction = lazy(() => import("./pages/Introduction"));
 const CoreTechnology = lazy(() => import("./pages/CoreTechnology"));
+const Process = lazy(() => import("./pages/Process"));
 
 function App() {
   console.log(process.env.PUBLIC_URL);
@@ -23,6 +24,7 @@ function App() {
           <Route path="/software-development" element={<SoftwareDevelop />} />
           <Route path="/introduction" element={<Introduction />} />
           <Route path="/core-technology" element={<CoreTechnology />} />
+          <Route path="/process" element={<Process />} />
         </Routes>
       </Suspense>
     </Router>

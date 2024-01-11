@@ -6,7 +6,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    position: relative;
+
 
 
     img {
@@ -20,7 +21,7 @@ nav {
         position: absolute;
         top: 22px;
         right: 90px;
-        z-index: 999;
+        z-index: 300;
 
         .burger-cross {
             position: absolute;
@@ -50,7 +51,79 @@ nav {
         }
     }
 
+
+
 }
+
+.contact {
+
+    width: 30vw;
+    height: 100vh;
+
+    background-color: $black--one;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    z-index: 999;
+
+
+    // animation: slip-in 1s linear;
+    // animation: slip-out 1s linear;
+
+    visibility: hidden;
+    transition: all 1s;
+    transform: translateX(100%);
+
+
+
+    &.active {
+        transform: translateX(0%);
+        visibility: visible;
+    }
+
+    .burger-cross {
+        width: 40px;
+    }
+
+}
+
+// .slip-in {
+//     transform: translateX(0);
+//     transition: all 3s linear;
+
+// }
+
+// .slip-out {
+//     transform: translateX(100%);
+//     transition: all 3s linear;
+
+// }
+
+// @keyframes slip-in {
+//     0% {
+//         transform: translateX(0%);
+//         // right: -30%;
+//     }
+
+//     100% {
+//         transform: translateX(100%);
+//         right: 0;
+//     }
+// }
+
+// @keyframes slip-out {
+//     0% {
+//         transform: translateX(100%);
+//         // right: 0;
+//     }
+
+//     100% {
+//         transform: translateX(0%);
+//         // right: -30%;
+//         // 
+//     }
+// }
 
 .menu-view {
     width: 100vw;
@@ -62,16 +135,22 @@ nav {
     z-index: 99;
     background-color: $black--one;
 
-    animation: showup 800ms ease-in;
+    // animation: showup 800ms ease-in;
 
-    @keyframes showup {
-        0% {
-            opacity: 0;
-        }
+    opacity: 0;
+    transition: all 0.6s linear;
 
-        100% {
-            opacity: 1;
-        }
+    // @keyframes showup {
+    //     0% {
+    //         opacity: 0;
+    //     }
+
+    //     100% {
+    //         opacity: 1;
+    //     }
+    // }
+    &.active {
+        opacity: 1;
     }
 
     ul {
@@ -113,15 +192,15 @@ nav {
                 }
 
                 .plus {
-                    
+
                     margin-left: 30px;
                     // outline: 1px solid red;
                     transition: 500ms linear;
-                    
+
                     width: 22px;
                     height: 60px;
-                  
-                
+
+
 
                 }
             }

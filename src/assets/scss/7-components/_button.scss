@@ -1,0 +1,14 @@
+.submit-form-btn {
+    width: 60%;
+    padding: 11px;
+    background-color: $blue--one;
+    color: $black--one;
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 3.4px;
+    &:active{
+        opacity: 0.8;
+    }
+}

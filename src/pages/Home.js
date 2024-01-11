@@ -101,8 +101,8 @@ const Home = () => {
             </div>
 
             <div className="what-we-do">
-                <div class="marquee-container">
-                    <div class="marquee-content">
+                <div className="marquee-container">
+                    <div className="marquee-content">
                         <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />
                         <ReactSVG src={process.env.PUBLIC_URL + '/img/cube.svg'} />
                         <ReactSVG src={process.env.PUBLIC_URL + '/img/what-we-do.svg'} />

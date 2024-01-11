@@ -2,8 +2,8 @@ import React from "react";
 
 const Marquee = ()=> {
     return (
-<div class="marquee-container-text">
-                    <div class="marquee-content-text">
+<div className="marquee-container-text">
+                    <div className="marquee-content-text">
                        <div>brand essence</div>
                        <div>brand essence</div>
                        <div>brand essence</div>

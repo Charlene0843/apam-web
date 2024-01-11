@@ -46,12 +46,14 @@ const Menu = ({ toggle }) => {
     return (
         <div
             className={`menu-view ${toggle ? 'active' : ''}`}
+        // 這是用animation控制的，後來改成transition
         // style={toggle ? {display: 'block',} : { display: 'none' }}
         >
             <ul>
                 {header.map((item, index) => {
                     return (
                         <Accordion
+                            key={index}
                             item={item}
                             index={index} />
                     )

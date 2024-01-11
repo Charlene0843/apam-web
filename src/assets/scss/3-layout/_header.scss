@@ -56,9 +56,10 @@ nav {
 }
 
 .contact {
-
     width: 30vw;
+    min-width: 300px;
     height: 100vh;
+    padding: 36px 44px;
 
     background-color: $black--one;
     position: fixed;
@@ -82,9 +83,122 @@ nav {
         visibility: visible;
     }
 
-    .burger-cross {
-        width: 40px;
+    .contact-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        p {
+            color: $white;
+            font-family: 'Noto Sans TC';
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 6.4px;
+        }
+
+        .burger-cross {
+            width: 40px;
+        }
     }
+
+    .contact-form {
+        form {
+            display: flex;
+            flex-direction: column;
+            .text-input-area {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .text-input {
+                border-bottom: 1px solid $white--one;
+                margin-bottom: 25px;
+                padding: 10px;
+
+                &::placeholder {
+                    color: $white;
+                    font-family: 'Noto Sans TC';
+                    font-size: 17px;
+                    font-weight: 300;
+                    letter-spacing: 3.4px;
+                }
+
+            }
+
+            .short {
+                width: 45%;
+            }
+
+            .long {
+                width: 100%;
+            }
+
+
+            .radio {
+                display: flex;
+                flex-direction: column;
+
+                margin-top: 20px;
+
+                p {
+                    margin-bottom: 10px;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+
+                    label {
+                        width: 44%;
+                        color: $white;
+                        padding: 14px;
+                        border: 1px solid $white--one;
+                        margin-bottom: 10px;
+
+
+                        input {
+
+                            &::placeholder {
+                                color: $white;
+                                font-family: 'Noto Sans TC';
+                                font-size: 17px;
+                                font-weight: 300;
+                                letter-spacing: 3.4px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            textarea {
+                margin-top: 20px;
+                width: 100%;
+
+                resize: none;
+                border-bottom: 1px solid $white;
+
+                &::placeholder {
+                    color: $white;
+                    font-family: 'Noto Sans TC';
+                    font-size: 17px;
+                    font-weight: 300;
+                    letter-spacing: 3.4px;
+                }
+            }
+
+            button {
+                margin-top: 36px;
+                align-self: center;
+            }
+
+
+        }
+    }
+
+
+
 
 }
 

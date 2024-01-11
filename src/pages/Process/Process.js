@@ -54,6 +54,9 @@ const CoreTechnology = () => {
                             })
                         }
                     </ul>
+                    <div className="step-dec">
+                        <span>Step</span>
+                    </div>
                 </div>
 
                 <Consultation />

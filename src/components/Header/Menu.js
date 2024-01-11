@@ -30,6 +30,17 @@ const Menu = ({ toggle }) => {
         }, {
             id: '04',
             title: '區塊鏈開發',
+            item: [{
+                title: '忠誠會員',
+                path: '',
+            }, {
+                title: '鑄造NFT',
+                path: '',
+            }, {
+                title: 'Web3入口',
+                path: '',
+            }
+            ]
 
         }, {
             id: '05',

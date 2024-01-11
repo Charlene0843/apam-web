@@ -1,30 +1,66 @@
-.process{
-    .main{
+.process {
+    .main {
         background-image: url(../../../../public/img/background/gradient-5.jpeg);
         background-size: cover;
         background-position: center;
         display: flex;
         justify-content: center;
-        ul{
+
+        margin-top: 200px;
+
+        position: relative;
+
+        ul {
             width: 50%;
             padding: 200px 0px;
             display: flex;
             flex-wrap: wrap;
             display: flex;
             justify-content: space-around;
-            gap:10%;
-            li{
+            gap: 10%;
+
+            li {
                 width: 30%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-top: 100px;
+
                 .f784 {
                     border-bottom: 1px solid $white;
                 }
-                p{
+
+                p {
                     margin-top: 25px;
                 }
+            }
+        }
+
+        .step-dec {
+            background-image: url(../../../../public/img/background/gradient-6.png);
+            background-size: cover;
+            background-position: center;
+            width: 20%;
+            height: 50vw;
+
+            position: absolute;
+            top: -200px;
+            right: 0;
+
+           
+
+            span {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 170px;
+                letter-spacing: 17px;
+                text-transform: capitalize;
+
+                color: $black;
+
+                transform: rotate(90deg);
+                position: absolute;
+                bottom: 86px;
+                left: -81px;
             }
         }
     }

@@ -1,9 +1,7 @@
-
-
 .home-wrapper {
 
     background: $black;
-    
+
     width: 100vw;
     outline: 1px solid tomato;
     position: relative;
@@ -36,7 +34,7 @@
 
     }
 
-   
+
 
     .dec-green {
         position: fixed;
@@ -90,7 +88,7 @@
     }
 
 
-    
+
 
     .banner {
         // outline: 1px solid tomato;
@@ -122,7 +120,7 @@
         // }
 
         .banner-logo {
-           height: 380px;
+            height: 380px;
             // fill: transparent;
             // color: rgba($color: $black, $alpha: 0.4);
             // color: $white;
@@ -131,6 +129,8 @@
             background: linear-gradient(90deg, $black, #fff, $black);
             background-repeat: no-repeat;
             background-size: 80%;
+
+            overflow: hidden;
 
             animation: flash-light 10s linear infinite;
         }
@@ -170,12 +170,13 @@
             border-right: .05em solid;
             animation: typing 6s steps(13)infinite,
                 caret 1s steps(1) infinite;
-                span{
-                    display: inline-block;
-                    width: 126px;
-                    letter-spacing: 8px;
 
-                }
+            span {
+                display: inline-block;
+                width: 126px;
+                letter-spacing: 8px;
+
+            }
         }
 
 
@@ -548,7 +549,7 @@
                 .title {
                     border: 1px solid $white--one ;
                     padding: 8px 24px;
-                
+
                 }
 
                 span {
@@ -558,7 +559,7 @@
                 p {
                     margin-right: 30px;
                     letter-spacing: 3.4px;
-                    
+
                 }
 
                 .arrow {
@@ -596,6 +597,7 @@
 
                     .arrow {
                         width: 100px;
+
                         div {
                             width: 25px;
                             transition: 500ms linear;
@@ -625,5 +627,20 @@
         }
     }
 
- 
+
+}
+
+@media screen and (max-width:768px) {
+    .home-wrapper {
+        .more {
+            span {
+                font-size: 16px;
+                letter-spacing: 1.6px;
+                margin-right: 3px;
+            }
+            svg{
+                height: 18px;
+            }
+        }
+    }
 }

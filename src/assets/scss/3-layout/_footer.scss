@@ -23,7 +23,8 @@ footer {
     }
 
     .wrapper {
-        width: 90%;
+        width: 100%;
+        max-width: 1210px;
         color: $white;
         display: flex;
         flex-direction: column;
@@ -35,14 +36,14 @@ footer {
             font-size: 118px;
             font-weight: 400;
             letter-spacing: 11.8px;
-            align-self: flex-start;
         }
 
         section {
             display: flex;
-            
+
             .info {
-                margin-right: 100px;
+                min-width: 320px;
+
                 p {
                     text-align: left;
                     margin-bottom: 17px;
@@ -56,47 +57,118 @@ footer {
                 }
             }
 
-            ul {
-                font-family: 'Noto Sans TC', sans-serif;
+            .map {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
+                flex-wrap: wrap;
 
-                .title {
-                    color: #FFF;
-                    font-size: 17px;
-                    font-weight: 350;
-                    letter-spacing: 1.7px;
-                    padding: 0px 10px;
+                ul {
+                    width: 120px;
+                    font-family: 'Noto Sans TC', sans-serif;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom: 50px;
 
-                    &:hover {
-                        color: $grey--two;
+                    .title {
+                        color: #FFF;
+                        font-size: 17px;
+                        font-weight: 350;
+                        letter-spacing: 1.7px;
+                        padding: 0px 10px;
+
+                        &:hover {
+                            color: $grey--two;
+                        }
+
                     }
 
-                }
+                    hr {
+                        width: 100%;
+                        // min-width: 50px;
+                        margin-bottom: 14px;
+                        border: 1px solid $grey--two;
+                    }
 
-                hr {
-                    width: 100%;
-                    // min-width: 50px;
-                    margin-bottom: 14px;
-                    border: 1px solid $grey--two;
-                }
+                    li {
+                        text-align: left;
+                        font-size: 15px;
+                        font-weight: 300;
+                        letter-spacing: 3px;
+                        padding: 5px 10px;
 
-                li {
-                    text-align: left;
-                    font-size: 15px;
-                    font-weight: 300;
-                    letter-spacing: 3px;
-                    padding: 5px 10px;
+                        cursor: pointer;
 
-                    cursor: pointer;
-
-                    &:hover {
-                        color: $grey--two;
+                        &:hover {
+                            color: $grey--two;
+                        }
                     }
                 }
             }
 
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 50px;
+      
+     
+       
+        .wrapper {
+            .contact-us {
+                font-size: 56px;
+                letter-spacing: 5.6px;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column-reverse;
+
+
+                .info {
+                    min-width: 320px;
+
+                    p {
+                        text-align: left;
+                        margin-bottom: 17px;
+
+
+                        font-size: 10px;
+
+                        font-weight: 350;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .map {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    ul {
+                        width: 120px;
+                        font-family: 'Noto Sans TC', sans-serif;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-bottom: 50px;
+                        padding: 0;
+                        margin-right: 20px;
+
+                        .title {
+                            font-size: 12px;
+                            letter-spacing: 1.2px;
+
+                        }
+
+                        li {
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+
+            }
         }
     }
 }

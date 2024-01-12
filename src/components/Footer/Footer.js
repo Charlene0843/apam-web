@@ -121,7 +121,7 @@ const Footer = (() => {
         }, {
             id: '05',
             title: '最新消息',
-            path:'/news'
+            path: '/news'
 
         }, {
             id: '06',
@@ -145,42 +145,47 @@ const Footer = (() => {
                         <p>Mail : info@apamgroup.com</p>
                         <p>
                             <span>Tel : (02) 6605-0405</span>
+                            <br/>
                             <span>Fax :  (02) 2506-0571</span>
                         </p>
                         <p>
                             <span>​星期一 ～ 星期五 </span>
+                            <br/>
                             <span>9:30am - 17:30pm</span>
                         </p>
                     </div>
-                    {footer.map((item, index) => {
-                        return (
+                    <div className="map">
+                        {footer.map((item, index) => {
+                            return (
 
 
-                            <ul key={index}>
-                                <span className="title"
-                                    onClick={() => { navigate(item?.path) }}>{item.title}</span>
-                                <hr />
-                                {
-                                    item.item
-                                        ?
-                                        <>
-                                            {item.item.map((item, index) => {
-                                                return (
-                                                    <li key={index}
-                                                        onClick={() => { navigate(item?.path) }}>
-                                                        {item.title}
-                                                    </li>
-                                                )
-                                            })}
-                                        </>
-                                        : <></>
-                                }
+                                <ul key={index}>
+                                    <span className="title"
+                                        onClick={() => { navigate(item?.path) }}>{item.title}</span>
+                                    <hr />
+                                    {
+                                        item.item
+                                            ?
+                                            <>
+                                                {item.item.map((item, index) => {
+                                                    return (
+                                                        <li key={index}
+                                                            onClick={() => { navigate(item?.path) }}>
+                                                            {item.title}
+                                                        </li>
+                                                    )
+                                                })}
+                                            </>
+                                            : <></>
+                                    }
 
-                            </ul>
+                                </ul>
 
 
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
+
                 </section>
             </div>
 

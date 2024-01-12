@@ -121,6 +121,7 @@ const Footer = (() => {
         }, {
             id: '05',
             title: '最新消息',
+            path:'/news'
 
         }, {
             id: '06',

@@ -1,0 +1,110 @@
+.news-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+
+    .sort {
+        padding-top: 50px;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                padding: 5px 25px;
+                color: $white--one;
+                text-align: center;
+                font-family: 'Noto Sans TC';
+                font-size: 22px;
+                font-weight: 300;
+                letter-spacing: 4.4px;
+           
+                border: 1px solid $black;
+
+
+                cursor: pointer;
+                &:hover {
+                    color: $orange;
+                    border: 1px solid $orange;
+                }
+            }
+        }
+    }
+
+    .news {
+        width: 80%;
+        justify-content: flex-start;
+        padding: 0;
+        padding: 50px 0px;
+        align-self: center;
+
+        ul {
+            width: 100%;
+
+            li {
+                width: 100%;
+
+                p {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+
+    .paginator {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+
+        ul {
+            display: flex;
+            width: 10%;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                width: 10px;
+                height: 10px;
+                display: block;
+
+
+                border: solid $white--one;
+                border-width: 2px 2px 0 0;
+                transform: rotate(225deg);
+
+
+            }
+
+            li {
+                cursor: pointer;
+
+                &:hover {
+                    color: $blue--one;
+                }
+            }
+
+            .left {
+                width: 10px;
+                height: 10px;
+                display: block;
+
+
+                border: solid $white--one;
+                border-width: 2px 2px 0 0;
+                transform: rotate(225deg);
+
+
+            }
+
+            .right {
+                width: 10px;
+                height: 10px;
+                display: block;
+
+
+                border: solid $white--one;
+                border-width: 2px 2px 0 0;
+                transform: rotate(45deg);
+            }
+
+        }
+    }
+}

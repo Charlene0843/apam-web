@@ -548,7 +548,7 @@
                 .title {
                     border: 1px solid $white--one ;
                     padding: 8px 24px;
-
+                
                 }
 
                 span {
@@ -558,6 +558,7 @@
                 p {
                     margin-right: 30px;
                     letter-spacing: 3.4px;
+                    
                 }
 
                 .arrow {
@@ -594,6 +595,7 @@
                     }
 
                     .arrow {
+                        width: 100px;
                         div {
                             width: 25px;
                             transition: 500ms linear;

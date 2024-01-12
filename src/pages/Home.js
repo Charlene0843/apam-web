@@ -5,9 +5,11 @@ import { ReactSVG } from "react-svg";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Consultation from "../components/Consultation/Consultation";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+    const navigate = useNavigate();
 
     const whyUs = [
         {
@@ -177,7 +179,8 @@ const Home = () => {
 
                         )
                     })}
-                    <div className="more">
+                    <div className="more"
+                        onClick={() => { navigate('/news') }}>
                         <span>MORE</span>
                         <ReactSVG src={process.env.PUBLIC_URL + '/img/arrow.svg'} />
                     </div>
@@ -188,7 +191,7 @@ const Home = () => {
             <Consultation />
 
 
-           
+
             <Footer />
 
 

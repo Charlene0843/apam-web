@@ -3,11 +3,13 @@
     background: $black;
 
     width: 100vw;
-    outline: 1px solid tomato;
+    
     position: relative;
 
     font-family: 'Noto Sans TC', sans-serif;
 
+
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -632,6 +634,32 @@
 
 @media screen and (max-width:768px) {
     .home-wrapper {
+
+        
+            &::before {
+                content: '';
+                width: 1px;
+                height: 100vh;
+                background-color: $white--one;
+                display: block;
+        
+                position: fixed;
+                left: 10px;
+        
+            }
+        
+            &::after {
+                content: '';
+                width: 1px;
+                height: 100vh;
+                background-color: $white--one;
+                display: block;
+        
+                position: fixed;
+                top: 0;
+                right: 10px;
+        
+            }
         .more {
             span {
                 font-size: 16px;

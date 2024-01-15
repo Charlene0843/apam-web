@@ -17,22 +17,74 @@
 
 
             font-family: 'Noto Sans TC';
-            font-size: 32px;
-            letter-spacing: 6.4px;
+            font-size: 2rem;
+            letter-spacing: 0.4rem;
         }
     }
 
     .stroke {
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 170px;
-        letter-spacing: 17px;
+        font-size: 10rem;
+        letter-spacing: 1rem;
         text-transform: capitalize;
 
         color: transparent;
         -webkit-text-stroke: 1px $blue--one;
         text-stroke: 1px $blue--one;
         opacity: 0.4;
-        margin-right: 90px;
+        margin-right: 3%;
 
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .banner-title {
+       
+
+        .main-title {
+            
+
+            svg {
+                width: 160px;
+            }
+
+           
+        }
+
+
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .banner-title {
+        height: 100px;
+        padding: 0px 15px;
+
+        .main-title {
+            position: relative;
+
+            svg {
+                width: 50px;
+            }
+
+            p {
+                color: $white;
+                position: absolute;
+                bottom: 78px;
+                right: -60px;
+
+                font-size: 16px;
+                line-height: 18px;
+                /* 112.5% */
+                letter-spacing: 3.2px;
+            }
+        }
+
+        .stroke {
+            font-size: 4.8rem;
+            letter-spacing: 0.48rem;
+
+        }
     }
 }

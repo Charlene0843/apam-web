@@ -352,3 +352,27 @@ nav {
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    nav{
+        padding: 0px 12px;
+        img{
+            margin: 12px;
+            
+            width: 57px;
+            height: auto;
+        }
+
+        .menu {
+            top: 10px;
+            right: 20px;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+            button{
+                display: none;
+            }
+        }
+    }
+}

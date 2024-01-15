@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
 
-body {
+html {
     font-size: 16px;
+    color: $white;
 }
+
 
 h3 {
     color: $white;
@@ -40,17 +42,78 @@ h5 {
 .f325 {
     color: $white;
     font-family: 'Noto Sans TC';
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
-    letter-spacing: 6.4px;
+    letter-spacing: 0.4rem;
 }
 
 .f173 {
     color: $white--one;
     font-family: 'Noto Sans TC';
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 28px;
     /* 164.706% */
-    letter-spacing: 3.4px;
+    letter-spacing: 0.4rem;
+}
+
+
+// 以下是新的字的政策
+.f2 {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+}
+
+.f175 {
+    font-size: 1.75rem;
+    letter-spacing: 0.35rem;
+}
+
+.f125 {
+    font-size: 1.25rem;
+    letter-spacing: 0.25rem;
+}
+
+.f1 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+// font weight
+.w7 {
+    font-weight: 700;
+}
+
+.w5 {
+    font-weight: 500;
+}
+
+.w3 {
+    font-weight: 300;
+}
+
+// font color
+.cw {
+    color: $white;
+}
+
+.cw1 {
+    color: $white--one;
+}
+
+.cb {
+    color: $black;
+}
+
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 10px;
+    }
 }

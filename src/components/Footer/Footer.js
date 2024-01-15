@@ -132,11 +132,6 @@ const Footer = (() => {
 
     return (
         <footer>
-            <p className="copyright">
-                Copyright © 2022 AP . APAM. All Rights Reserved.
-                <br />
-                A member of the APAM . APAM International Co. Ltd
-            </p>
             <div className="wrapper">
                 <div className="contact-us">CONTACT US</div>
                 <section>
@@ -145,12 +140,12 @@ const Footer = (() => {
                         <p>Mail : info@apamgroup.com</p>
                         <p>
                             <span>Tel : (02) 6605-0405</span>
-                            <br/>
+                            <br />
                             <span>Fax :  (02) 2506-0571</span>
                         </p>
                         <p>
                             <span>​星期一 ～ 星期五 </span>
-                            <br/>
+                            <br />
                             <span>9:30am - 17:30pm</span>
                         </p>
                     </div>
@@ -187,6 +182,11 @@ const Footer = (() => {
                     </div>
 
                 </section>
+                <p className="copyright">
+                    Copyright © 2022 AP . APAM. All Rights Reserved.
+                    <br />
+                    A member of the APAM . APAM International Co. Ltd
+                </p>
             </div>
 
         </footer>

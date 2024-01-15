@@ -112,9 +112,16 @@ footer {
 @media screen and (max-width: 768px) {
     footer {
         padding: 50px;
-      
-     
-       
+
+        .copyright {
+            position: static;
+           
+            transform: rotate(0deg);
+
+        }
+
+
+
         .wrapper {
             .contact-us {
                 font-size: 56px;

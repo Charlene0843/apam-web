@@ -1,0 +1,5 @@
+{
+  "name": "minting",
+  "private": true,
+  "main": "./Minting.js"
+}

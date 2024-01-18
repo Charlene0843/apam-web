@@ -5,20 +5,7 @@ const Footer = (() => {
     const navigate = useNavigate();
 
     // const footer = [
-    //     {
-    //         title: '關於艾恩',
-    //         item: [{
-    //             title: '公司介紹',
-    //             path: '/introduction',
-    //         }, {
-    //             title: '核心技術',
-    //             path: '/core-technology',
-    //         },{
-    //             title: '開發流程',
-    //             path: '/process',
-    //         }
-    //         ]
-    //     }, {
+    //    {
     //         title: 'RevX',
     //         item: [{
     //             title: 'RevX 介紹',
@@ -54,30 +41,8 @@ const Footer = (() => {
     //             path: '',
     //         }
     //         ]
-    //     }, {
-    //         title: '最新消息',
-    //         item: [{
-    //             title: '所有消息',
-    //             path: '',
-    //         }, {
-    //             title: '重要公告',
-    //             path: '',
-    //         }, {
-    //             title: '活動資訊',
-    //             path: '',
-    //         }, {
-    //             title: '媒體報導',
-    //             path: '',
-    //         }
-    //         ]
-    //     }, {
-    //         title: '合作夥伴',
-    //         item: [{
-    //             title: '合作夥伴',
-    //             path: '',
-    //         }
-    //         ]
     //     }
+
     // ]
     const footer = [
         {
@@ -97,6 +62,7 @@ const Footer = (() => {
         }, {
             id: '02',
             title: 'RevX',
+            path: 'https://apamverse.com/'
 
         }, {
             id: '03',
@@ -108,24 +74,37 @@ const Footer = (() => {
             title: '區塊鏈開發',
             item: [{
                 title: '忠誠會員',
-                path: '',
+                path: '/loyalty',
             }, {
                 title: '鑄造NFT',
-                path: '',
+                path: '/minting',
             }, {
                 title: 'Web3入口',
-                path: '',
+                path: '/web3',
             }
             ]
 
         }, {
             id: '05',
             title: '最新消息',
-            path: '/news'
+            path: '/news',
+            item: [
+                {
+                    title: '重要公告',
+                    path: '/news/announcements',
+                }, {
+                    title: '活動資訊',
+                    path: '/news/activity',
+                }, {
+                    title: '媒體報導',
+                    path: 'media-coverage',
+                }
+            ]
 
         }, {
             id: '06',
             title: '合作夥伴',
+            path: '/cooperation'
 
         }
     ]
@@ -156,7 +135,16 @@ const Footer = (() => {
 
                                 <ul key={index}>
                                     <span className="title"
-                                        onClick={() => { navigate(item?.path) }}>{item.title}</span>
+                                        onClick={() => {
+                                            if (item.title === 'RevX') {
+
+                                            } else {
+                                                navigate(item?.path)
+                                            }
+
+                                        }}>
+                                        {item.title === 'RevX' ? <a href="https://apamverse.com/" target="_blank" rel="noreferrer">{item.title}</a> : item.title}
+                                    </span>
                                     <hr />
                                     {
                                         item.item

@@ -1,0 +1,5 @@
+{
+  "name": "cooperation",
+  "private": true,
+  "main": "./Cooperation.js"
+}

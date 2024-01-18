@@ -75,9 +75,18 @@ footer {
                         font-weight: 350;
                         letter-spacing: 1.7px;
                         padding: 0px 10px;
+                        cursor: pointer;
 
                         &:hover {
                             color: $grey--two;
+                        }
+
+                        a {
+                            color: $white;
+
+                            &:hover {
+                                color: $grey--two;
+                            }
                         }
 
                     }
@@ -115,7 +124,6 @@ footer {
 
         .copyright {
             position: static;
-           
             transform: rotate(0deg);
 
         }

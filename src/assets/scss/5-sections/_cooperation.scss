@@ -1,0 +1,64 @@
+.cooperation {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+
+        ul {
+
+            margin: 5% auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px 2%;
+
+
+
+
+            li {
+                width: 15%;
+                height: 170px;
+                background-color: $white;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    // width: 100%;
+                    max-width: 100%;
+
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .cooperation {
+        .wrapper {
+            ul {
+                gap: 30px 5%;
+
+                li {
+                    flex-grow: 1;
+                    width: 20%;
+
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cooperation {
+        .wrapper {
+            ul {
+                li {
+                    width: 100px;
+                    height: 75px;
+                }
+            }
+        }
+    }
+}

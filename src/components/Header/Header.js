@@ -52,7 +52,8 @@ const Header = () => {
                 />
             </nav>
             <Menu
-                toggle={toggle} />
+                toggle={toggle}
+                setToggle={setToggle} />
         </>
 
     )

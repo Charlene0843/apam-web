@@ -1,0 +1,5 @@
+{
+  "name": "web3",
+  "private": true,
+  "main": "./Web3.js"
+}

@@ -105,6 +105,7 @@ nav {
         form {
             display: flex;
             flex-direction: column;
+
             .text-input-area {
                 display: flex;
                 justify-content: space-between;
@@ -289,33 +290,51 @@ nav {
                 width: 100%;
                 min-width: 300px;
                 font-family: 'Noto Sans TC';
-                font-size: 37px;
+                font-size: 2.3rem;
 
                 font-weight: 300;
-                letter-spacing: 7.4px;
+                letter-spacing: 0.4rem;
 
 
                 display: flex;
                 align-items: center;
 
                 span {
-                    font-size: 42px;
+                    font-size: 2.625rem;
                     font-family: 'Bebas Neue';
-                    letter-spacing: 4.2px;
+                    letter-spacing: 0.2625rem;
                     margin-right: 20px;
 
 
                 }
 
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+
                 .plus {
 
                     margin-left: 30px;
-                    // outline: 1px solid red;
                     transition: 500ms linear;
 
-                    width: 22px;
-                    height: 60px;
+                    width: 20px;
+                    height: 20px;
 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    div {
+                        width: 15px;
+                        height: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
 
 
                 }
@@ -329,9 +348,9 @@ nav {
 
                 li {
                     font-family: 'Noto Sans TC';
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     font-weight: 300;
-                    letter-spacing: 4.8px;
+                    letter-spacing: 0.3rem;
                     padding: 9px 24px;
                     transition: opacity 500ms linear;
 
@@ -354,11 +373,12 @@ nav {
 }
 
 @media screen and (max-width:768px) {
-    nav{
+    nav {
         padding: 0px 12px;
-        img{
+
+        img {
             margin: 12px;
-            
+
             width: 57px;
             height: auto;
         }
@@ -366,11 +386,13 @@ nav {
         .menu {
             top: 10px;
             right: 20px;
+
             svg {
                 width: 20px;
                 height: 20px;
             }
-            button{
+
+            button {
                 display: none;
             }
         }

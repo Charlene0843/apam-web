@@ -1,0 +1,114 @@
+.blockchain-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5% 0;
+
+    .title {
+
+
+        .gradient-color {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .purple {
+            background: linear-gradient(90deg, #5D46C8 46.92%, #9183D7 97.1%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blue-purple {
+            background: linear-gradient(90deg, #8025F5 0%, #5DA7EC 87.85%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pink {
+            background: linear-gradient(90deg, #DF3AA3 34.51%, #E173BE 83.22%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        font-size: 5rem;
+        letter-spacing: 1rem;
+
+
+
+    }
+
+    p {
+        max-width: 1100px;
+        width: 80%;
+        margin-top: 2%;
+        text-align: center;
+    }
+}
+
+.blockchain-intro {
+    margin-bottom: 10%;
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            width: 20%;
+
+            .picture {
+                background-color: $black--one;
+                border-radius: 20px;
+
+                svg {
+                    width: 100%;
+                }
+            }
+
+            .main {
+                margin: 20px 0;
+
+                p {
+
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .blockchain-banner {
+        .title {
+            font-size: 2rem;
+        }
+    }
+
+    .blockchain-intro {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                width: 80%;
+                display: flex;
+                justify-content: space-around;
+
+                .picture {
+                    width: 30%;
+                }
+
+                .main {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

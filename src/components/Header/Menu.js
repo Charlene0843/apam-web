@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "../Accordion/Accordion";
 
-const Menu = ({ toggle }) => {
+const Menu = ({ toggle, setToggle }) => {
 
     const header = [
         {
@@ -21,7 +21,7 @@ const Menu = ({ toggle }) => {
         }, {
             id: '02',
             title: 'RevX',
-
+            path: 'https://apamverse.com/'
         }, {
             id: '03',
             title: '軟體開發',
@@ -32,25 +32,37 @@ const Menu = ({ toggle }) => {
             title: '區塊鏈開發',
             item: [{
                 title: '忠誠會員',
-                path: '',
+                path: '/loyalty',
             }, {
                 title: '鑄造NFT',
-                path: '',
+                path: '/minting',
             }, {
                 title: 'Web3入口',
-                path: '',
+                path: '/web3',
             }
             ]
 
         }, {
             id: '05',
             title: '最新消息',
-            path:'/news'
+            path: '/news',
+            item: [
+                {
+                    title: '重要公告',
+                    path: '/news/announcements',
+                }, {
+                    title: '活動資訊',
+                    path: '/news/activity',
+                }, {
+                    title: '媒體報導',
+                    path: 'media-coverage',
+                }
+            ]
 
         }, {
             id: '06',
             title: '合作夥伴',
-
+            path: '/cooperation'
         }
     ]
 
@@ -67,7 +79,8 @@ const Menu = ({ toggle }) => {
                         <Accordion
                             key={index}
                             item={item}
-                            index={index} />
+                            index={index}
+                            setToggle={setToggle} />
                     )
                 })}
             </ul>

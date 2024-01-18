@@ -1,0 +1,108 @@
+.loyalty {
+
+    .NFT {
+        margin-bottom: 10%;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .picture {
+                    width: 40%;
+
+                    svg {
+                        width: 100%;
+                    }
+                }
+
+                .main {
+                    margin: 20px 0;
+
+                    width: 50%;
+
+                    p {
+                        margin: 20px 0;
+                        line-height: 2;
+                    }
+                }
+            }
+
+            li:nth-child(2n+1) {
+
+                .picture {
+                    order: 2;
+                }
+
+                .main {
+                    order: 1;
+                }
+            }
+
+        }
+    }
+
+    .purse {
+
+        margin-bottom: 15%;
+        display: flex;
+        justify-content: center;
+
+        .wrapper {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                padding: 50px;
+                align-self: flex-start;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                li {
+                    width: 30%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .main {
+                        margin: 20px 0;
+
+                        p {
+                            margin: 20px 0;
+                            line-height: 2;
+                        }
+                    }
+                }
+
+                .pic {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .picture {
+                        width: 100%;
+
+                        svg {
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}

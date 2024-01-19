@@ -67,7 +67,7 @@
 
                         p {
                             width: 100%;
-                            height: 50px;
+
                             margin-top: 50px;
                             color: $white--one;
                             font-family: 'Noto Sans TC';
@@ -186,6 +186,14 @@
 
                         .main {
                             width: 100%;
+
+                            h2 {
+                                min-height: 80px;
+                            }
+
+                            p {
+                                min-height: 150px;
+                            }
                         }
 
                         .img-area {

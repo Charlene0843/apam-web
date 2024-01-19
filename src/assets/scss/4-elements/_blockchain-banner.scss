@@ -62,7 +62,7 @@
             width: 20%;
 
             .picture {
-                background-color: $black--one;
+                // background-color: $black--one;
                 border-radius: 20px;
 
                 svg {
@@ -77,6 +77,7 @@
 
                     margin: 20px 0;
                 }
+
             }
         }
     }

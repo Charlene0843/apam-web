@@ -171,7 +171,7 @@ const Home = () => {
                     打造一個全面且實用的生活化平台。</p>
 
                 <div className="more">
-                    <span>MORE</span>
+                    <a href="https://apamverse.com/" target="_blank" rel="noreferrer">MORE</a>
                     <ReactSVG src={process.env.PUBLIC_URL + '/img/arrow.svg'} />
                 </div>
 

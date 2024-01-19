@@ -4,6 +4,7 @@ const ContactUs = ({ contactShow, setContactShow }) => {
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [email, setEmail] = useState('');
+    const [companyName, setCompanyName] = useState('');
     const [companyUrl, setCompanyUrl] = useState('');
     const [info, setInfo] = useState({ budget: null, provisioningTime: null, hasNFT: null });
 
@@ -77,32 +78,66 @@ const ContactUs = ({ contactShow, setContactShow }) => {
                     <input
                         className="text-input f173 long"
                         type="text"
+                        name="company-name"
+                        id="company-name"
+                        placeholder="公司名稱"
+                        value={companyName}
+                        onChange={(e) => setCompanyName(e.target.value)}></input>
+                    <input
+                        className="text-input f173 long"
+                        type="text"
                         name="company-url"
                         id="company-url"
                         placeholder="公司網址"
                         value={companyUrl}
                         onChange={(e) => setCompanyUrl(e.target.value)}></input>
                     <div className="budget radio">
-                        <p className="f173">您每月的系統預算？*</p>
+                        <p className="f173">您的系統預算？*</p>
                         <div>
                             <label className="f173">
                                 <input
                                     type="radio"
-                                    value="$800-$2,500"
-                                    checked={info.budget === '$800-$2,500'}
+                                    value="5萬"
+                                    checked={info.budget === '5萬'}
                                     onChange={(e) => {
                                         setInfo({
                                             ...info,
                                             budget: e.target.value
                                         })
                                     }} />
-                                $800-$2,500
+                                5萬
                             </label>
                             <label className="f173">
                                 <input
                                     type="radio"
-                                    value="$5,000-$12,000"
-                                    checked={info.budget === '$5,000-$12,000'}
+                                    value="30萬"
+                                    checked={info.budget === '30萬'}
+                                    onChange={(e) => {
+                                        setInfo({
+                                            ...info,
+                                            budget: e.target.value
+                                        })
+                                    }} />
+                                30萬
+                            </label>
+                            <label className="f173">
+                                <input
+                                    type="radio"
+                                    value="60萬"
+                                    checked={info.budget === '60萬'}
+                                    onChange={(e) => {
+                                        setInfo({
+                                            ...info,
+                                            budget: e.target.value
+                                        })
+                                    }} />
+                                60萬
+                            </label>
+                            <label className="f173">
+                                <input
+                                    type="radio"
+                                    value="100萬以上"
+                                    checked={info.budget === '100萬以上'}
                                     onChange={(e) => {
                                         setInfo({
                                             ...info,
@@ -110,7 +145,7 @@ const ContactUs = ({ contactShow, setContactShow }) => {
                                         })
 
                                     }} />
-                                $5,000-$12,000
+                                100萬以上
                             </label>
                         </div>
 
@@ -174,7 +209,7 @@ const ContactUs = ({ contactShow, setContactShow }) => {
                         </div>
 
                     </div>
-                    <div className="hasNFT radio">
+                    {/* <div className="hasNFT radio">
                         <p className="f173">目前是否有NFT項目？*</p>
                         <div>
                             <label className="f173">
@@ -205,7 +240,8 @@ const ContactUs = ({ contactShow, setContactShow }) => {
                                 否
                             </label>
                         </div>
-                    </div>
+                    </div> */}
+                    <span>訊息  *</span>
                     <textarea
                         placeholder="想了解的服務內容或是其他疑問" />
 

@@ -12,7 +12,7 @@
 
         ul {
             width: 50%;
-            padding: 200px 0px;
+            padding: 10% 0px;
             display: flex;
             flex-wrap: wrap;
             display: flex;
@@ -47,12 +47,12 @@
             top: -200px;
             right: 0;
 
-           
+
 
             span {
                 font-family: 'Bebas Neue', sans-serif;
-                font-size: 170px;
-                letter-spacing: 17px;
+                font-size: 10rem;
+                letter-spacing: 1rem;
                 text-transform: capitalize;
 
                 color: $black;
@@ -64,4 +64,67 @@
             }
         }
     }
+}
+
+@media screen and (max-width:768px) {
+    .process {
+        .main {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+
+            margin-top: 10%;
+
+            position: relative;
+
+            ul {
+                width: 80%;
+                padding: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10%;
+
+                li {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 100px;
+
+                    .f784 {
+                        border-bottom: 1px solid $white;
+                    }
+
+                    p {
+                        margin-top: 25px;
+                    }
+                }
+            }
+
+            .step-dec {
+                display: none;
+
+
+
+                span {
+                    font-family: 'Bebas Neue', sans-serif;
+                    font-size: 10rem;
+                    letter-spacing: 1rem;
+                    text-transform: capitalize;
+
+                    color: $black;
+
+                    transform: rotate(90deg);
+                    position: absolute;
+                    bottom: 86px;
+                    left: -81px;
+                }
+            }
+        }
+    }
+
 }

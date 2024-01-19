@@ -73,15 +73,18 @@ const Slider = () => {
 
                                         <div className="vertical-line"></div>
                                     </div>
-                                    <div className="main">
-                                        <h1>{item.date}</h1>
-                                        <h2>{item.title}</h2>
-                                        <p>{item.content}</p>
+                                    <div className="content">
+                                        <div className="main">
+                                            <h1>{item.date}</h1>
+                                            <h2>{item.title}</h2>
+                                            <p>{item.content}</p>
+                                        </div>
+                                        <div className="img-area">
+                                            <img className="blockchain" src={process.env.PUBLIC_URL + '/img/blockchain-1.png'} alt='block chain' />
+                                            <img className="man" src={process.env.PUBLIC_URL + '/img/man-1.png'} alt='man' />
+                                        </div>
                                     </div>
-                                    <div className="img-area">
-                                        <img className="blockchain" src={process.env.PUBLIC_URL + '/img/blockchain-1.png'} alt='block chain' />
-                                        <img className="man" src={process.env.PUBLIC_URL + '/img/man-1.png'} alt='man' />
-                                    </div>
+
                                 </section>
                                 <div className="prev-next">
                                     {item.id > 0 && <div className="arrow-left" onClick={() => setCurrent(n => n - 1)}><div></div></div>}

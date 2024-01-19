@@ -87,7 +87,7 @@ const Footer = (() => {
         }, {
             id: '05',
             title: '最新消息',
-            path: '/news',
+            path: '/news/all',
             item: [
                 {
                     title: '重要公告',
@@ -97,7 +97,7 @@ const Footer = (() => {
                     path: '/news/activity',
                 }, {
                     title: '媒體報導',
-                    path: 'media-coverage',
+                    path: '/news/media-coverage',
                 }
             ]
 

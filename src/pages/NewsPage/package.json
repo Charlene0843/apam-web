@@ -1,0 +1,5 @@
+{
+  "name": "newspage",
+  "private": true,
+  "main": "./NewsPage.js"
+}

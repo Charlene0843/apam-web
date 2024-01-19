@@ -7,12 +7,13 @@ footer {
     background-color: #000000;
 
     position: relative;
-    z-index: 2;
+    // z-index: 2;
 
     .copyright {
         position: fixed;
         bottom: 160px;
         left: -150px;
+        z-index: 2;
         color: $grey--one;
         transform: rotate(-90deg);
 

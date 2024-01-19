@@ -48,7 +48,10 @@ const Accordion = ({ item, index, setToggle }) => {
                             return (
                                 <li key={index}
                                     style={show ? { opacity: '1' } : { opacity: '0' }}
-                                    onClick={() => { navigate(item?.path) }}
+                                    onClick={() => {
+                                        setToggle(false);
+                                        navigate(item?.path);
+                                    }}
                                 >
                                     {item.title}
                                 </li>

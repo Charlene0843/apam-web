@@ -18,6 +18,7 @@ const Introduction = lazy(() => import("./pages/Introduction"));
 const Loyalty = lazy(() => import("./pages/Loyalty"));
 const Minting = lazy(() => import("./pages/Minting"));
 const News = lazy(() => import("./pages/News"));
+const NewsPage = lazy(() => import("./pages/NewsPage"));
 const Process = lazy(() => import("./pages/Process"));
 const SoftwareDevelop = lazy(() => import("./pages/SoftwareDevelop"));
 const Web3 = lazy(() => import("./pages/Web3"));
@@ -34,6 +35,8 @@ function App() {
         <Route path="/loyalty" element={<Loyalty />} />
         <Route path="/minting" element={<Minting />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:type" element={<News />} />
+        <Route path="/news/:type/:id" element={<NewsPage />} />
         <Route path="/process" element={<Process />} />
         <Route path="/software-development" element={<SoftwareDevelop />} />
         <Route path="/web3" element={<Web3 />} />

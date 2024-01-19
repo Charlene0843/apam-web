@@ -1,13 +1,14 @@
 .news-wrapper {
     display: flex;
     flex-direction: column;
-    
 
     .sort {
         padding-top: 50px;
+
         ul {
             display: flex;
             justify-content: center;
+
             li {
                 padding: 5px 25px;
                 color: $white--one;
@@ -16,11 +17,12 @@
                 font-size: 22px;
                 font-weight: 300;
                 letter-spacing: 4.4px;
-           
+
                 border: 1px solid $black;
 
 
                 cursor: pointer;
+
                 &:hover {
                     color: $orange;
                     border: 1px solid $orange;
@@ -41,6 +43,12 @@
 
             li {
                 width: 100%;
+
+                a {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                }
 
                 p {
                     flex-grow: 1;

@@ -1,0 +1,99 @@
+.news-page-wrapper {
+    .banner-title {
+        .main-title {
+            display: flex;
+            align-items: flex-end;
+
+            .bread-crumbs {
+                display: flex;
+                padding: 20px;
+
+                a {
+                    padding: 0px 10px;
+                    color: $white;
+                    font-size: 1rem;
+                    display: flex;
+                    align-items: center;
+                    // border-bottom: 1px solid $white;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        margin-left: 10px;
+                        border-right: 1px solid $white ;
+                        border-top: 1px solid $white ;
+                        transform: rotate(45deg);
+
+                    }
+                }
+
+                span {
+                    padding: 0px 10px;
+                    color: $white--one;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .news-page-content {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+
+        .wrapper {
+            width: 90%;
+
+            .date {
+                margin: 12px 0px 24px;
+
+                p {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 6px;
+                    }
+
+                    span {
+                        margin-right: 16px;
+                    }
+                }
+            }
+
+            section {
+                padding: 5%;
+
+                article {
+                    p {
+                        line-height: 1.6;
+                        white-space: pre-line;
+                    }
+                }
+
+                img {
+                    margin-top: 5%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .news-page-wrapper {
+        .banner-title {
+            .main-title {
+
+                align-items: center;
+
+                .bread-crumbs {
+                    padding: 0;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

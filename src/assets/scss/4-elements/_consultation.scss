@@ -49,6 +49,7 @@
 
 @media screen and (max-width: 768px) {
     .lets-talk {
+        padding: 0;
         height: 70vh;
         position: relative;
         z-index: 2;
@@ -74,7 +75,7 @@
         .background-decoration {
             font-size: 60px;
             letter-spacing: 6px;
-            top: 35%;
+            top: 45%;
         }
     }
 }

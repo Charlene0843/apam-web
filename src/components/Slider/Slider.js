@@ -61,7 +61,7 @@ const Slider = () => {
             <ul>
                 {
                     history.filter((item) => item.id === current).map((item) => {
-                        console.log(400 * item.id / history.length);
+                        // console.log(400 * item.id / history.length);
                         return (
                             <li key={item.id}>
                                 <section>

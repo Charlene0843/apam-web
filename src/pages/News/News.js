@@ -7,8 +7,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const News = () => {
     const { pathname, state } = useLocation();
-    console.log(useLocation())
-    console.log(state);
     const navigate = useNavigate();
 
     const news = [
@@ -167,7 +165,7 @@ const News = () => {
                         }
                     </ul>
                 </div>
-                <div className="news">
+                <div className="news-container">
                     {
                         newsList(state).length > 0
                             ?
